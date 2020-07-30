@@ -2,7 +2,7 @@
 
 SoftwareSerial Blue(5, 6); //블루투스 설정 블루투스(Tx, Rx)
 
-long int data; // '불빛' 변수 값의 데이터
+long int data; // android 휴대폰에서 전송된 번호 저장하는데 사용
  
 int LED = 13; // 'LED' 변수 선언
 long int password1 = 92; // '불이 켜질때'의 변수값 선언
@@ -24,7 +24,7 @@ Blue.begin(9600); // 블루투스 통신 시작
  
 void loop()
 {
-  while(Blue.available()==0); // 블루투스에 값이 '0'일동안 반복
+  while(Blue.available()==0); // 블루투스에 데이터를 받지 못했다면 여기서 기다리기
  
  if(Blue.available()>0) { // 블루투스에 값이 들어오면
   data = Blue.parseInt(); // 블루투스값을 'data'에 입력
