@@ -14,7 +14,7 @@ void setup()
 {
 
   pinMode(DCmotor, OUTPUT);
-  analogWrite(DCmotor, LOW);
+  analogWrite(DCmotor, HIGH);
 
   Serial.begin(9600);
   Blue.begin(9600);
@@ -33,12 +33,12 @@ void loop()
   delay(400);
 
   if (data == password1) {
-    analogWrite(DCmotor, 250);
+    analogWrite(DCmotor, 0);
     Serial.println("DCmotor ON");
   }
 
   if (data == password2) {
-    analogWrite(DCmotor, 0);
+    analogWrite(DCmotor, 255);
     Serial.println("DCmotor OFF");
   }
 }
