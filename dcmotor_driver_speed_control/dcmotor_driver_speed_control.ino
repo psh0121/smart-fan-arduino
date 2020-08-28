@@ -75,4 +75,16 @@ void loop() {
 
       Serial.println("Strong Wind"); // 시리얼 모니터에 "Strong Wind" 출력
     }
+
+    //임시
+    else if(data == 1) {
+
+      analogWrite(motorA_A1, 200);
+      analogWrite(motorA_B1, 0);
+
+      delay(1000);
+
+      analogWrite(motorA_A1, 0);
+      analogWrite(motorA_B1, 0);
+    }
   }
