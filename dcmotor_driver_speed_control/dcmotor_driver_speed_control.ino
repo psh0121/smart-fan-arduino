@@ -6,12 +6,12 @@ long int data; // android 휴대폰에서 전송된 번호 저장하는데 사�
 int motorA_A1 = 10; // 모터에 연결된 디지털 변수 motorA_A1 선언
 int motorA_B1 = 9; // 모터에 연결된 디지털 변수 motorA_B1 선언
 
-long int password1 = 92; // '전원이 켜질때'의 변수값 선언
-long int password2 = 79; // '불이 꺼질때'의 변수값 선언
+long int password1 = 1500; // '전원이 켜질때'의 변수값 선언
+long int password2 = 1600; // '불이 꺼질때'의 변수값 선언
 
-long int weak = 10; // '약풍'일 경우의 변수 값 선언
-long int middle = 50; // '중풍'일 경우의 변수 값 선언
-long int strong = 80; // '강풍'일 경우의 변수 값 선언
+long int weak = 1700; // '약풍'일 경우의 변수 값 선언
+long int middle = 1800; // '중풍'일 경우의 변수 값 선언
+long int strong = 1900; // '강풍'일 경우의 변수 값 선언
 
 void setup() {
 
